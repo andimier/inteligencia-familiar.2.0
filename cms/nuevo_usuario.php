@@ -1,54 +1,8 @@
 <?php
-require_once("includes/connection.php");
-require_once("includes/functions.php");
-
-$mensaje = "";
-$mensaje2 = "";
-
-	if(isset($_POST['submit'])){
-		$errores = array();
-		$required_fields = array('username','password');
-		//$errores = array_merge($errores, $required_fields);
-		//$errores = array_merge($errores, check_required_fields($required_fields, $_POST));
-		foreach($required_fields as $fieldname){
-			if(!isset($_POST[$fieldname]) || (empty($_POST[$fieldname])  && !is_numeric($_POST[$fieldname]))){
-				$errores[] = $fieldname;	
-			}
-		}
-	
-		$username = trim(mysql_prep($_POST['username']));	
-		$password = trim(mysql_prep($_POST['password']));	
-		//algoritmos de incriptacion
-		//$hashed_password = md5($password);
-		//$hashed_password = hash($password);
-		$hashed_password = sha1($password);
-	
-		
-		if(empty($errores)){
-			$query = "INSERT INTO usuarios (username, hashed_password) VALUES ('{$username}','{$hashed_password}')";
-			$result = mysql_query($query, $connection);
-			
-			if($result){
-				 $mensaje = "El usuario fué creado correctamente! <br /> <a href=\"content.php\"><h1>Comenzar</h1></a>";	
-			}else{
-				 $mensaje = "No se creó el usuario!"	;
-				 $mensaje .="<br />" . mysql_error();
-			}
-		}else{
-			if(count($errores) ==1){
-				 $mensaje = "Hubo un error en el formulario.";
-			}else{
-				 $mensaje = "Hubo " . count($errores) . " errores en el formulario.";
-				 $mensaje = mysql_error();
-			}
-			 foreach($errores as $error){
-				 $mensaje2 = "Por favor ingrese los siguientes campos: - " . $error . "<br/>";
-			}
-		}
-	}else{
-		$username = "";	
-		$password = "";	
-	}
+	require_once("includes/connection.php");
+	require_once("includes/functions.php");
+	require_once("../utils/phpfunctions.php");
+	require_once("components/new_user.php")
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -81,7 +35,7 @@ administrador!</h2>
 <h4><?php echo $mensaje; ?></h4>
 <h4><?php echo $mensaje2; ?></h4>
 -------------------------------------------------------------------------------------------------------
-      
+
 
 <form action="nuevo_usuario.php" method="post">
 <h3>
@@ -100,6 +54,5 @@ administrador!</h2>
 </div>
 </div>
 
-        
+
 <?php require("includes/footer.php");?>
-			

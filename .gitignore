@@ -1,5 +1,6 @@
-./vscode
+.vscode/
 
+cms/cnx
 cms/imagenes
 cms/includes/connection.php
 cms/includes/constants.php
