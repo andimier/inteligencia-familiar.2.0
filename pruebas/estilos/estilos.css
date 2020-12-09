@@ -1,0 +1,1043 @@
+body {margin:0px; border:0px;}
+a {text-decoration:none;}
+img {border: none;}
+img a {border:none;}
+ul {
+	list-style-type: square; 
+	padding:0px; 
+	margin-left:0px;
+	margin-top:0px;
+	margin-bottom:0px;
+}
+
+
+
+/*== CABEZOTE=====================================================================*/
+
+div#cabezote {
+	top:0px; 
+	width:100%; height:160px; 
+	z-index:2;
+	/*background-image: url(diseno/inicio/fondo-cabezote.png);*/
+	background-color:#FFF;
+	border-bottom: 2px solid #000; 
+	border-top:none; 
+	border-left: none; 
+	border-right: none;
+}
+div#contenido_cabezote {
+	margin:auto; 
+	width:950px; height:170px;
+	/*padding-left:20px;
+	padding-right:20px;*/
+}
+div#logo {
+	float:left; top:0px; left:10px; width:160px; height:160px; 
+	border:0px; border-style:dotted; border-color:#000;
+	background-image:url(diseno/inicio/logo2.png); 
+}
+	
+div#contenedortitulos {
+	position:relative;
+	float:left; margin-left:15px; width:300px; height:170px;}
+div#titulointeligencia{margin-top:25px; font-family:'minion_proregular',AgencyFB, Arial; font-size:35px; color:#666;}
+div#nombremel{
+	position:relative;
+	margin-top:-7px; 
+	font-family:'minion_proregular',AgencyFB, Arial; 
+	font-size:23px; 
+	color:#F15A24;
+}
+div#frasecabezote {
+	margin-top:-5px; 
+	font-family:'SteelfishBold',AgencyFB, Arial; 
+	font-size:25px; 
+	letter-spacing:1px;
+	color:#999;
+}
+
+div#noticiascabezote {
+	float:left;
+	position:relative;
+	margin-left:200px; 
+	width:80px; 
+	height:115px;
+}
+
+div#noticiacabezote  {
+	float:left; 
+	position:relative;
+	margin-left:5px; 
+	width:auto; 
+	height: 115px; 
+}
+div#ganchocabezote   {width:70px; height:20px; background-image: url(../diseno/inicio/ganchocabezote.png);}
+div#colgajocabezote  {
+	float:left;
+	margin-right:5px;
+	width:70px; height:70px; padding:5px; background-color: #000;}
+
+
+div#titulo-noticias {
+	margin-left:5px;
+	margin-top:70px; 
+	font-family:'SteelfishBold',AgencyFB, Arial; 
+	font-size:30px;
+}
+div#titulo-noticias a {
+	color: #000;
+}
+div#titulo-noticias a:hover {
+	color: #999;
+}
+div#nombrenoticiacabezote  {
+	position:relative;
+	font-family:'SteelfishBold',AgencyFB, Arial; 
+	font-size:25px; 
+	color:#666;
+	}
+
+
+/*=== FRANJA MENU ===============================================================*/
+
+div#franjamenu {
+	clear:both;
+	height:50px; width:100%;
+	border-bottom: 2px solid #000; 
+	border-top:none; 
+	border-left: none; 
+	border-right: none;
+	
+}
+div#menu {
+	margin:auto; 
+	clear:both;
+	width:955px; height:50px;
+	padding-left:0px; 
+	padding-top:3px; 
+	font-family:'SteelfishBold',AgencyFB, Arial; 
+	font-size:24px;
+	letter-spacing: 1px;
+}
+
+div#franjamenu2 {
+	display:none;
+	clear:both;
+	height:50px; width:100%;
+	border-bottom: 2px dotted #999; 
+	border-top:none; 
+	border-left: none; 
+	border-right: none;
+	letter-spacing: 1px;
+}
+div#menu2 {
+	
+	margin:auto; 
+	clear:both;
+	width:955px; height:50px;
+	padding-left:0px; 
+	padding-top:3px; 
+	font-family:'SteelfishBold',AgencyFB, Arial; 
+	font-size:24px;
+}
+	
+div.link {float:left; margin-right: 30px; margin-top:3px; color:#666; text-transform:uppercase;}	
+div.link a {color:#666;}
+div.link a:hover {color:#999;}
+
+div.link2 {float:left; margin-right: 30px; margin-top:3px; color:#999; text-transform:inherit;}	
+div.link2 a {color:#999;}
+div.link2 a:hover {color:#000;}
+
+div.link3 {float:left; margin-right: 30px; margin-top:3px; color:#999; text-transform:inherit;}	
+div.link3 a {color:#999;}
+div.link3 a:hover {color:#000;}
+
+div#franjainicio {
+	clear:both;
+	height:100px; width:100%;
+	border-bottom: 2px dotted #000; 
+	border-top:none; 
+	border-left: none; 
+	border-right: none;
+}
+div#inicio {
+	margin:auto; width:950px; padding:0px; height:50px; 
+}
+
+
+/*======================== CONTENEDORES =====================================================================*/
+
+div#prueba {
+	width:100%; height: 200px; background: #FFFFFF;
+	border-bottom: 5px solid #000000;
+}
+div#cuerpo {width:100%; height:1000px; background: #666666;}
+div#cuerpo2 {margin:auto; width: 1000px; height: auto;}
+div#dentrodecuerpo {
+	position:relative; 
+	width:960px; height:auto;
+	padding-left:20px;
+	padding-right:20px;
+	/*margin-top:15px;
+	margin-bottom:35px; */
+}
+div.etiquetanegra1 {
+	position:absolute;
+	width:auto;
+	height:auto;
+	top:-30px;
+	left:0px;
+	padding:5px;
+	color:#FFF;
+	background: #000;
+	font-family:'AdobeCaslonProItalic', 'SteelfishBold',AgencyFB, Arial;
+	font-size:20px;
+}
+div.contenedor {
+	clear:both;
+	width:100%; 
+	height:auto; 
+	border-bottom: 2px dotted #999;
+	border-left:none; 
+	border-right: none; 
+	border-top: none;
+}
+
+div.contenedor2 {
+	clear:both;
+	width:100%; 
+	height:auto; 
+	border-bottom: 1px solid #000;
+	border-left:none; 
+	border-right: none; 
+	border-top: none;
+}
+	
+div.contenedor3 {
+	position:relative;
+	clear: both; 
+	margin-top:0px; 
+	width:100%; height: 500px; 
+	border-top: none;
+	border-bottom:0px; 
+	border-left:none; 
+	border-right: none;
+	background-image: url(../diseno/inicio/cuerda.png);
+	background-repeat: no-repeat;
+}
+
+div.contenidos { 
+	margin:auto; 
+	position:relative; 
+	width:980px; height:auto;
+	padding-left:0px;
+	padding-right:0px;
+	margin-top:15px; 
+	margin-bottom:15px; 
+}
+
+div.contenedorcontenidos {
+	position:relative;
+	width:950px; 
+	height:auto;
+	margin-left:15px;
+	margin-top:0px; 
+	margin-bottom:0px; 
+}
+
+div.contenedorgenerico {
+	clear:both; 
+	width:950px; height: auto;
+}
+
+
+div.contenedorfloatleft {
+	float:left; 
+	width:auto; 
+	height: auto; 
+	margin-bottom:10px;
+	margin-right: 20px;
+}
+div.contenedorfloatleft2 {
+	float:left; 
+	width:310px; 
+	height: auto; 
+	margin-bottom:10px;
+	margin-left: 0px;
+}
+
+div.contenedorfloatleft3 {
+	float:left; 
+	width:auto; 
+	height:auto; 
+	margin-bottom:10px;
+	margin-left: 0px;
+}
+
+div.vacio {clear:both; width:1000px;}
+div.vacio2 {clear:both; width:950px;}
+
+div.contvideos {
+	clear: both;
+}
+
+div#col1 {
+	float:left; 
+	width:550px; 
+	height:auto; 
+	margin-top:20px; 
+	margin-bottom:30px;
+}
+div#col2 {
+	position: absolute; 
+	width:450px; 
+	height:auto; 
+	top:40px; 
+	left: 530px;
+	z-index:100;
+	background:#ffffff;
+}
+
+div.col3 {
+	position: absolute; 
+	width:245px; 
+	height:auto; 
+	top:30px; 
+	left:700px;
+	z-index: 1;
+}
+
+div.flotador-redes {
+	position: absolute; 
+	width:100px; 
+	height:auto; 
+	top:20px; 
+	left:590px;
+	z-index: 150;
+}
+
+div.marcoamarillo {
+	width:225px;
+	height: 225px;
+	background-color:#FF9933;
+	padding:10px;
+}
+div#marcofoto{
+	width:225px;
+	height: 225px;
+	background-color:#000;
+	padding-left:10px;
+}
+
+div.marconegropequeno {
+	float:left;
+	margin-right:20px;
+	margin-bottom:20px;
+	width:140px;
+	height:140px;
+	padding:10px;
+	background-color:#000;
+	padding:10px;
+}
+
+div.marconegromini {
+	float:left;
+	margin-right:10px;
+	margin-bottom:20px;
+	width:100px;
+	height:100px;
+	background-color:#000;
+	padding:10px;
+}
+
+div.marconegromini2 {
+	float:left;
+	margin-right:10px;
+	margin-bottom:20px;
+	width:80px;
+	height:80px;
+	padding:5px;
+	background-color:#000;
+}
+
+div.imagencontraportada {
+	clear:both;
+	background-image:url(../diseno/publicaciones/contraportada.png);
+	width: 200px;
+	height: 45px;
+}
+
+div#articulos {
+	position:relative; 
+	margin:auto; width: 980px; 
+	height:auto; margin-top:0px; 
+	/*padding-left:20px;
+	padding-right: 20px;*/
+}
+
+div#servicio1 {
+	width:auto; height: auto;
+	margin-left:150px;
+	top:-25px;
+}
+
+.caja1 {clear:both; width:450px; height:280px; }
+.caja2 {width:450px; height:300px; }
+
+
+
+/*=== BARRAS ===*/
+
+div.barraamarilla {
+	width:950px;
+	height:80px;
+	background: #F93;
+}
+
+div.barranegra {
+	width:800px;
+	height:80px;
+	margin-top:30px;
+	margin-bottom:30px;
+	background: #000;
+}
+
+div.barranegrafechas {
+	width:150px;
+	height:45px;
+	margin-top:15px;
+	background: #000000;
+}
+
+div.fechasblancas {
+	padding:5px;
+	font-family:'SteelfishBold',AgencyFB, Arial; 
+	font-size:30px;
+	text-transform:uppercase;
+	color:#FFFFFF;
+}
+
+/*=== COLGAJOS ===*/
+
+div.colgajo2 {
+	position:absolute;
+	left:5px; top:-35px;
+	width:120px; height:170px;
+	background-image: url(../diseno/servicios/colgajonumeros.png);
+}
+
+div.colgajo3 {
+	position:absolute;
+	left:820px; top:-50px;
+	width:120px; height:170px;
+	background-image: url(../diseno/servicios/colgajonumeros.png);
+}
+
+div.colgajo4 {
+	position:absolute;
+	left:0px; 
+	top:-30px;
+	width:120px; 
+	height:170px;
+	background-image: url(../diseno/servicios/colgajonumeros.png);
+	z-index: 1;
+}
+
+div.colgajo5 {
+	position:absolute;
+	left:458px; 
+	top:-30px;
+	width:120px; height:170px;
+	background-image: url(../diseno/servicios/colgajonumeros.png);
+}
+
+
+div.cont_titulotodaspublicaciones {
+	width:230px;
+	padding-left:10px;
+	padding-right:10px;
+	margin-top:-50px;
+	margin-bottom:30px;
+	background: #FFFFFF;
+}
+
+div.gafas {
+	width:150px; height: 100px;  
+	margin-left:40px;
+	margin-top:30px;
+	background-image: url(../diseno/publicaciones/gafas.png);
+	overflow: hidden;
+}
+
+div.contenedoriconos{
+	margin-left:50px;
+	margin-top:20px;
+	width:120px;
+	height:auto;
+}
+div.img_publicaciones {
+	float:left;
+	width:40px; height:40px;  
+	margin-left:0px;
+	margin-top:0px;
+	background-image: url(../diseno/publicaciones/img.png);
+	
+	
+}
+
+div.contenedoranteriorsiguiente{
+	position:absolute;
+	left:420px;
+	top:0px;
+	width:auto;
+	height:auto;
+}
+
+div.ante_siguiente {
+	float:right; 
+	width:90px; 
+	height: auto; 
+	margin-bottom:10px;
+	margin-right: 10px;
+}
+
+div.contenedorcinco {
+	position:absolute;
+	left: 330px;
+	top:-50px;
+	z-index:-50;
+	opacity:0.5;
+}
+
+
+/*=============================== TITULOS Y TEXTOS ====================================================================*/
+
+
+div.titulosamarillos {
+	float:left;
+	margin-left:15px; 
+	margin-top:22px; 
+	font-family:'SteelfishBold',AgencyFB, Arial; 
+	font-size:65px; 
+	color:#F93; 
+	text-transform:uppercase; 
+}
+
+div.titulosamarillos a {color:#F93; }
+div.titulosamarillos a:hover {color:#999; }
+
+div.titulosamarillos2 {
+	float:left;
+	margin-left:0px; 
+	margin-top:0px; 
+	margin-bottom:0px;
+	font-family:'SteelfishBold',AgencyFB, Arial; 
+	font-size:65px; 
+	color:#F93; 
+	text-transform:uppercase; 
+}
+
+div.titulosamarillosmedianos {
+	margin-left:0px; 
+	margin-top:0px; 
+	font-family:'SteelfishBold',AgencyFB, Arial; 
+	font-size:50px; 
+	color:#F93; 
+	text-transform:uppercase; 
+}
+
+div.titulosnaranjas {
+	float:left; margin-left:15px; margin-top:22px; 
+	font-family:'SteelfishBold',AgencyFB, Arial; font-size:65px; color:#F15A24; 
+	text-transform:uppercase; 
+}
+div.titulosgrises {
+	float:left; margin-left:15px; margin-top:22px; 
+	font-family:'SteelfishBold',AgencyFB, Arial; font-size:65px; 
+	color:#999; text-transform:uppercase; 
+}
+
+div.titulosgrises a {color:#999;}
+div.titulosgrises a:hover {color:#F93;}
+
+div.titulosgrisesmayus2 {
+	clear:both; 
+	width:auto; 
+	margin-top:-25px;  
+	font-family:'SteelfishBold',AgencyFB, Arial; 
+	font-size:27px;
+	letter-spacing: 1px;
+	color:#999;
+	text-transform:uppercase;
+}
+div.titulosminusculasgrises {
+	clear:both; 
+	width:auto; 
+	margin-top:0px;  
+	font-family:'SteelfishBold',AgencyFB, Arial; 
+	font-size:25px;
+	color:#999;
+	text-transform:inherit;
+}
+
+div.titulosnegros {
+	margin-left:0px; 
+	margin-top:15px; 
+	margin-bottom:0px;
+	font-family:'SteelfishBold',AgencyFB, Arial; 
+	font-size:50px; 
+	color:#000; 
+	text-transform:uppercase; 
+}
+
+div.titulosnegrospequenos {
+	clear:both;
+	margin-left:0px; 
+	margin-top:22px; 
+	font-family:'SteelfishBold',AgencyFB, Arial; font-size:35px; 
+	color:#000; text-transform:uppercase; 
+}
+
+div.titulosnegrospequenos a {color: #000000;}
+
+div.titulosnegrospequenos a:hover {
+	color: #666;	
+}
+
+
+div.titulosnegrosminusculas {
+	clear:both;
+	margin-left:0px; 
+	margin-top:0px; 
+	font-family:'SteelfishBold',AgencyFB, Arial; font-size:35px; 
+	color:#000; 
+}
+
+div.titulosnegrosminusculas a {
+	color:#000;
+	text-decoration:none;
+}
+div.titulosnegrosminusculas a:hover {
+	color:#999;
+}
+
+
+div.titulosnegrospequenos2 {
+	clear:both;
+	margin-left:0px; 
+	margin-top:0px; 
+	margin-bottom:30px;
+	font-family:'SteelfishBold',AgencyFB, Arial; 
+	font-size:35px; 
+	color:#000; 
+	text-transform:uppercase; 
+}
+
+div.titulosnegrospequenos3 {
+	clear:both;
+	margin-left:0px; 
+	margin-top:10px;
+	font-family:'SteelfishBold',AgencyFB, Arial; 
+	font-size:25px; 
+	color:#000; 
+	text-transform:uppercase; 
+}
+
+div.titulosnegrospequenos3 a {
+	text-decoration:none;
+	color: #000;
+}
+
+div.titulosnegrospequenos3 a:hover {
+	color: #666;	
+}
+
+
+div.titulosminusculas {
+	clear:both; 
+	width:515px; 
+	margin-top:15px;  
+	font-family:'SteelfishBold',AgencyFB, Arial; 
+	font-size:40px;
+	text-transform:inherit;
+}
+
+div.titulosminusculasamarillos {
+	clear:both; width:515px; margin-top:15px;  
+	font-family:'SteelfishBold',AgencyFB, Arial; 
+	font-size:40px;
+	color: #F93;
+	text-transform:inherit;
+}
+
+div.titulosblancosgrandes {
+	padding:10px;
+	font-family:'SteelfishBold',AgencyFB, Arial; 
+	font-size:50px;
+	text-transform:uppercase;
+	color:#FFFFFF;
+}
+
+div.titulosblancospequenos {
+	padding:10px;
+	font-family:'SteelfishBold',AgencyFB, Arial; 
+	font-size:30px;
+	text-transform:uppercase;
+	color:#FFFFFF;
+}
+div.numerosblancospequenos {
+	padding:5px;
+	font-family:'SteelfishBold',AgencyFB, Arial; 
+	font-size:25px;
+	text-transform:uppercase;
+	color:#FFFFFF;
+}
+
+/* === TEXTOS ====*/
+div.textos12 {
+	clear:both;
+	width:250px; 
+	padding-top:10px;
+	font-family:Arial; 
+	font-size:12px; 
+	color:#000; 
+	text-align: left;
+}
+div.textos12 a {
+	color:#000;
+}
+div.textos12 a:hover {
+	color:#999;
+}
+div.textos {
+	clear:both; 
+	width:470px; 
+	font-family:Arial; font-size:14px; 
+	color:#000; 
+	text-align: justify;
+}
+
+div.textos a {color:#000; font-weight: bold;}
+div.textos a:hover {color:#999;}
+
+div.textos2 {
+	clear:both; 
+	width:600px; height:auto;
+	margin-top:-15px;
+	margin-bottom:15px;
+	font-family:Arial; 
+	font-size:14px; 
+	color:#000; 
+	text-align: justify;
+}
+
+div.textos3 {
+	clear:both; 
+	width:150px; 
+	height:auto;
+	margin-top:0px;
+	margin-bottom:20px;
+	font-family:Arial; 
+	font-size:12px; 
+	color:#000; 
+	text-align:left;
+	
+}
+
+div.textos4 {
+	clear:both; 
+	width:700px; 
+	height:auto;
+	margin-top:0px;
+	margin-bottom:20px;
+	font-family:Arial; 
+	font-size:12px; 
+	color:#000; 
+	text-align:justify;
+}
+
+div.textos4 a {color:#000;	font-weight: bold;}
+div.textos4 a:hover {color:#999;}
+
+div#textos-ocultos {
+	display: none;
+	clear:both; 
+	width:900px; 
+	height:auto;
+	margin-top:0px;
+	margin-bottom:15px;
+	font-family:Arial; 
+	font-size:14px; 
+	color:#000; 
+	text-align: justify;
+}
+
+div.textosarticulos {
+	clear:both; 
+	width:600px; height:auto;
+	margin-top:15px;
+	font-family:Arial; font-size:14px; 
+	color:#000; 
+	text-align: justify;
+}
+
+div.textossteel {
+	clear:both; 
+	width:730px; 
+	font-family:Arial; 
+	font-size:14px; 
+	color:#000; 
+	text-align:left;
+	letter-spacing: 1px;
+}
+
+div#textoganancias {
+	clear:both; 
+	margin-left:30px; 
+	font-family:'SteelfishBold',AgencyFB, Arial;
+	font-size:24px; 
+	color:#000; 
+	letter-spacing: 0px;
+	text-transform:uppercase;
+}
+
+div#textoganancias2 {
+	clear:both; 
+	margin-left:0px; 
+	margin-top:8px;
+	font-family:'SteelfishBold',AgencyFB, Arial;
+	font-size:24px; 
+	letter-spacing:1px;
+	color:#999; 
+	text-transform:uppercase;
+}
+div#textoganancias2 a {color:#999}
+div#textoganancias2 a:hover {color:#000;}
+
+div#textoinicio {
+	float:left; 
+	margin-left:0px;
+	margin-top:10px;
+	font-family:'SteelfishBold',AgencyFB, Arial; 
+	font-size:65px;
+}	
+div#textofrases {
+	float:left; 
+	width:500px;
+	margin-left:40px; 
+	margin-top:25px; 
+	font-family:'SteelfishBold',AgencyFB, Arial; 
+	font-size:23px; 
+	color:#F33;
+	letter-spacing: 1px;
+	z-index: 500;
+}
+
+/*=== NUMEROS ====*/
+
+div.numeros{
+	float:left; 
+	margin-top:10px; 
+	width:25px; 
+	font-family:'SteelfishBold',AgencyFB, Arial; font-size:75px;
+}
+
+div.numerosblancos{
+	margin-top:60px; 
+	margin-left:50px;
+	width:25px; 
+	font-family:'SteelfishBold',AgencyFB, Arial; 
+	font-size:85px;
+	color:#FFFFFF;
+}
+
+
+div#contenido1 	  {width:550px; height:auto;}
+
+
+
+
+
+/* ====================== COLUMNA 2 ======================================================*/
+
+div#titulo_publicaciones {
+	position:absolute;
+	width:350px; 
+	height:70px; 
+	left:40px; 
+	top:-20px;
+	font-family:'SteelfishBold', AgencyFB, Arial; 
+	font-size:60px;
+	text-align: center;
+	z-index:100;
+	background-color: #FFF;
+}
+	
+div#titulo_publicaciones2 {
+	position:absolute;
+	width:300px; height:70px; 
+	left:300px; top:-70px;
+	font-family:'SteelfishBold',  AgencyFB, Arial; font-size:70px;
+	text-align: center;
+	z-index:100;
+	background-color: #FFF;
+	}
+
+
+/* =========================================  CARRUSEL 1 =============================================*/
+
+.my_carousel {
+	position:relative; 
+	width:450px; 
+	background-color: #FFF; 
+	z-index: 1; 
+	margin-top:30px;
+}
+.carousel_container {height: 260px; width:350px; margin: auto;}
+.caption_container {width: 450px; height: 50px;}
+.carousel_data {display:none;}
+
+.carousel_data .imagen {
+	width:140px;
+	padding:15px;
+	background:#000;
+	border: 2px #000 solid;
+}
+
+#carousel {width:200px; height: 260px; margin: auto;} /* el width del contenedor junta o separa los objetos */
+#carousel img {width: 120px; height:120px; cursor: pointer;}
+
+#captions {
+	height:50px; width:300px; margin:auto; text-align: center; 
+	font-family: 'AdobeCaslonProBoldItalic',AgencyFB, Arial; font-size:19px; color:#666;
+}
+#captions a {
+	color:#000;
+}
+#captions a:hover {
+	color:#999;
+}
+.siguiente {position:absolute; cursor:pointer; left:390px; top: 140px;}
+.anterior  {position:absolute; cursor:pointer; left: 10px; top: 140px;}
+
+/* CARRUSEL 2 ==============*/
+
+.my_carousel2 {
+	position:relative; 
+	margin-top:-20px; 
+	width: 450px; 
+	background-color: #FFF; 
+	
+}
+.my_carousel3 {
+	position:relative; 
+	margin-top:30px; 
+	width: 450px; 
+	background-color: #FFF; 
+	
+}
+.carousel_container2 {height: 260px; width:350px; margin: auto;}
+.caption_container2 {width: 450px; height: 50px;}
+.carousel_data2 {display: none;}
+
+#carousel2 {width:200px; height: 260px; margin: auto;} /* el width del contenedor junta o separa los objetos */
+
+#carousel2 img {width: 120px; height:120px; cursor: pointer;}
+#captions2 {
+	height:50px; width:300px; margin:auto; text-align: center; 
+	font-family: 'AdobeCaslonProBoldItalic',AgencyFB, Arial; font-size:19px; color:#666;
+}
+#captions2 a {
+	color:#000;
+}
+#captions2 a:hover {
+	color:#999;
+}
+.siguiente2 {position:absolute; cursor:pointer; left:390px; top: 140px;}
+.anterior2  {position:absolute; cursor:pointer; left: 10px; top: 140px;}
+
+
+
+
+/*=========================== PERFIL ==========================================*/
+
+
+div#videos {
+	clear:both; 
+	position:absolute; 
+	width:300px; height:300px;
+	top:-35px; left:550px;
+	z-index:1;
+}
+
+/*=========================== ARTICULOS =================================*/
+
+
+div.ganchos {width:150px; height:80px;}
+div.colgajos{width:140px; height: 140px; padding:10px; background-color: #000;}
+div.textoarticulos{width:120px; font-family:Arial; font-size:12px; padding-top: 5px;}
+div.textoarticulos a {color:#000;}
+div.textoarticulos a:hover {color:#999;}
+	
+div#gancho1 {position:absolute; width:150px; height:230px; float:left; top:100px; left:20px;}
+div#gancho2 {position:absolute; width:150px; height:230px; float:left; top:80px; left:215px;}
+div#gancho3 {position:absolute; width:150px; height:230px; float:left; top:70px; left:410px;}
+div#gancho4 {position:absolute; width:150px; height:230px; float:left; top:65px; left:600px;}
+div#gancho5 {position:absolute; width:150px; height:230px; float:left; top:45px; left:790px;}
+
+
+.icono     {width: 200px; height:200px; }
+.titulo_articulos {width:500px; height:20px; padding:15px; font-family:'SteelfishBold',AgencyFB, Arial; font-size:60px; color: #F60; }
+
+
+/*======= InTELIGENCIA   ========================*/
+
+div#grafico {
+	width:950px; height: 250px;
+	background-image:url(../diseno/inicio/graficointeligencia2.png);
+	background-repeat:no-repeat;
+}
+
+
+
+/*======================== articulos ===============================*/
+
+div.colgajoarticulos {
+	position:absolute;
+	width:320px; 
+	height:420px;
+	left:670px; 
+	top:-35px; 
+	z-index: 1;
+}
+
+div#ganchoarticulos {
+	width:280px;
+	height:140px;
+	background-image: url(../diseno/articulos/ganchoarticulos.png);
+}
+
+div#imagencolgajoarticulos {
+	width:250px;
+	height: 250px;
+	margin-left:0px;
+	padding:15px;
+	margin-top:0px;
+	background: #000;
+}
+
+#boton {
+	border: none;
+	background: #ffffff;
+	cursor:pointer;
+	font-family:'SteelfishBold',AgencyFB, Arial; 
+	font-size:30px;
+}
+
+#boton-ocultos {
+	font-family:Arial;
+	font-size:14px;
+	font-weight:bold;
+	cursor:pointer;
+}
