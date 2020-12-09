@@ -1,11 +1,38 @@
-body {background-color: #FFF; margin:0px}
-li 	 {list-style:square; padding-left:0px}
-h3 {margin-top:0px;}
+body {
+	background-color: #FFF;
+	margin: 0
+}
+
+li 	 {
+	padding-left:0px
+}
+
+h3 {
+	margin-top:0px;}
+
+input[type=text] {
+	padding: 10px;
+}
+
+input[type=submit] {
+	behavior: url(../PIE.htc);
+	border: 0;
+	cursor: pointer;
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	height: 35px;
+	padding: 10px;
+}
+
+input[type=submit]:hover {
+	background-color: #666;
+}
 
 #cabezote   {
-	width:100%; 
-	min-width:1345px; 
-	height:50px; 
+	width:100%;
+	min-width:1345px;
+	height:50px;
 	margin-bottom:60px;
 	background: #000000;
 	background-image:url('../iconos/andimier-cms.jpg');
@@ -14,18 +41,18 @@ h3 {margin-top:0px;}
 	color:#fff;
 }
 #contenedor {
-	width:1345px; 
+	width:1345px;
 	height:auto;
-	
+
 }
 
 .col1   {
-	float:left; 
-	width:300px; 
-	padding-left:25px; 
-	background-image:url(../iconos/contenido_01.png); 
-	background-color:#FFF; 
-	
+	float:left;
+	width:300px;
+	padding-left:25px;
+	background-image:url(../iconos/contenido_01.png);
+	background-color:#FFF;
+
 }
 
 div#sitioyusuario {
@@ -35,27 +62,39 @@ div#sitioyusuario {
 }
 
 .col2  {
-	float:left; 
+	float:left;
 	position:relative;
-	width:600px; 
+	width:600px;
 	font-family: 'Libre Baskerville', serif;
-	font-style:italic; 
-	font-size:15px; 
+	font-style:italic;
+	font-size:15px;
 	color:#333333;
 }
-.col2 a {color:#666; text-decoration:none;}
-.col2 a:hover {color:#000; text-decoration:none;}
 
+.col2 a {
+	color:#666;
+	text-decoration: none;
+}
+
+.col2 a:hover {
+	color:#000;
+	text-decoration:none;
+}
+
+.col2 .item {
+	font-size: 16px;
+	padding: 15px 10px;
+}
 
 
 .col3   {
-	float:left; 
-	width:400px; 
+	float:left;
+	width:400px;
 	margin-left:20px;
 	font-family: 'Libre Baskerville', serif;
-	font-style:italic; 
-	font-size:15px; 
-	 
+	font-style:italic;
+	font-size:15px;
+
 
 }
 
@@ -85,7 +124,7 @@ div#sitioyusuario {
   font-size:15px;
   font-style:normal;
   background:#ffffff;
-  
+
 }
 
 div.etiquetagris {
@@ -124,7 +163,7 @@ div.etiquetalogout a:hover {color: #333; text-decoration:none;}
   font-family:Arial, Helvetica, sans-serif;
   font-size:15px;
   font-style:normal;
-  
+
 }
 
 .intLink {
@@ -134,21 +173,21 @@ div.etiquetalogout a:hover {color: #333; text-decoration:none;}
 
 div.titulos1{
 	font-family: 'Libre Baskerville', serif;
-	font-style:italic; 
+	font-style:italic;
 	font-size:20px;
 	color:#666;
 }
 
 div.titulos1 p{
 	font-family: 'Libre Baskerville', serif;
-	font-style:italic; 
+	font-style:italic;
 	font-size:15px;
 	color:#666;
 }
 
 div.titulos1 a{
 	font-family: 'Libre Baskerville', serif;
-	font-style:italic; 
+	font-style:italic;
 	text-decoration:none;
 	color:#666;
 }
@@ -156,7 +195,7 @@ div.titulos1 a{
 div.titulos1 a:hover{color:#333;}
 
 div.secciones{
-	font-family:Arial, Helvetica, sans-serif; 
+	font-family:Arial, Helvetica, sans-serif;
 	text-transform:lowercase;
 	font-size:15px;
 }
@@ -191,7 +230,7 @@ input#boton1 {
 }
 
 input#btn_eliminar1 {
-	
+
 	background: #ff0000;
 	margin-left: 2px;
 	border:none;
@@ -226,37 +265,37 @@ div.imagenes {
 /*============ LOGIN =======================*/
 
 table {
-	border-collapse:collapse; 
-	vertical-align:top; 
+	border-collapse:collapse;
+	vertical-align:top;
 	padding-top:20px;
 }
 
 .contenido1 {
-	width:400px; 
+	width:400px;
 	margin:auto;
-	padding-top:20px; 
-	font-family:Arial; 
-	font-style:normal; 
-	font-size:14px; 
+	padding-top:20px;
+	font-family:Arial;
+	font-style:normal;
+	font-size:14px;
 	color:#666
 }
 
 
 .boton {
-	background-color:#666; 
+	background-color:#666;
 	padding:10px;
-	border:none; 
-	color:#FFF; 
+	border:none;
+	color:#FFF;
 	font-size:14px;
 	cursor:pointer;
 }
 
 .mensajelogin {
-	width:100%; 
+	width:100%;
 	margin:auto;
-	font-family:Arial; 
-	font-style:normal; 
-	font-size:14px; 
+	font-family:Arial;
+	font-style:normal;
+	font-size:14px;
 	color:#ff0000;
 }
 
@@ -282,12 +321,12 @@ ul {
 	position:absolute;
 	top:-75px;
 	right:200px;
-	width:100px; 
+	width:100px;
 	height:20px;
 	padding:5px;
 	font-family: 'Libre Baskerville', serif;
-	font-style:italic; 
-	font-size:15px; 
+	font-style:italic;
+	font-size:15px;
 	text-align:center;
 	color:#fff;
 	background:#f00;
@@ -297,34 +336,13 @@ ul {
 	position:absolute;
 	top:-75px;
 	right:200px;
-	width:100px; 
+	width:100px;
 	height:20px;
 	padding:5px;
 	font-family: 'Libre Baskerville', serif;
-	font-style:italic; 
-	font-size:15px; 
+	font-style:italic;
+	font-size:15px;
 	text-align:center;
 	color:#fff;
 	background:#66cc33;
 }
-
-
-
-#eliminar_btn form input[type=submit]{
-	width:110px;
-	height:35px;
-	background: #f00;
-	border:0;
-	color:#fff;
-	
-	font-family: 'Lato', sans-serif;
-	font-size:12px;
-	font-weight:300;
-	cursor:pointer;
-	behavior: url(../PIE.htc);
-}
-
-
-
-
-

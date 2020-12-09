@@ -89,17 +89,23 @@
         <input type="text"   name="titulo"  value="" size="50" maxlength="50" />
         <input type="submit" name="insertararticulo" value="Insertar Publicacion"/>
   	</form>
-   <hr />
+    <br />
+    <hr />
 
-	Has click sobre el titulo del contenido para editarlo.<br /><br />
     <div class="mensaje"> <?php echo $mensaje; ?></div>
     <br />
 
-    <?php while($articulo = phpMethods('fetch-array', $grupo_articulos)):?>
-		<a href="editar-articulo.php?articulo_id=<?php echo urlencode($articulo["id"]); ?>&modulo=<?php echo $modulo_titulo; ?>">
-		<li><?php echo $articulo["titulo"]; ?></li>
-        </a><br />
-	<?php endwhile; ?>
+	Has click sobre el titulo del contenido para editarlo.
+	<ul>
+		<?php while($articulo = phpMethods('fetch-array', $grupo_articulos)): ?>
+			<li class="item">
+				<a href="editar-articulo.php?articulo_id=<?php echo urlencode($articulo["id"]); ?>&modulo=<?php echo $modulo_titulo; ?>">
+					<span><?php echo $articulo["fecha"]; ?><span> &nbsp;
+					<?php echo $articulo["titulo"]; ?>
+				</a>
+			</li>
+		<?php endwhile; ?>
+	</ul>
 
 </div>
 <?php require("includes/footer.php");?>
