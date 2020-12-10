@@ -5,7 +5,7 @@
 <script type="text/javascript" src="editor/scripts/jHtmlArea-0.7.0.js"></script>
 <link rel="Stylesheet" type="text/css" href="editor/style/jHtmlArea.css" />
 
-<script type="text/javascript">    
+<script type="text/javascript">
         // You can do this to perform a global override of any of the "default" options
         // jHtmlArea.fn.defaultOptions.css = "jHtmlArea.Editor.css";
 
@@ -19,7 +19,7 @@
                 toolbar: [
                     ["bold", "italic", "underline", "|", "forecolor"],
                     ["p", "h1", "h2", "h3", "h4", "h5", "h6"],
-                    ["link", "unlink", "|", "image"],                    
+                    ["link", "unlink", "|", "image"],
                     [{
                         // This is how to add a completely custom Toolbar Button
                         css: "custom_disk_button",
