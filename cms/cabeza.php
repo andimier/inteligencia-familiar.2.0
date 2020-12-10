@@ -38,7 +38,7 @@
     <div class="col1">
 
         <div class="etiquetalogout">
-            <a href="logout.php" onclick="return confirm('estas a punto de cerrar sesion, se perderan los cambios que no hayas guardado!')">CERRAR SESI�N</a>
+            <a href="logout.php" onclick="return confirm('estas a punto de cerrar sesion, se perderan los cambios que no hayas guardado!')">CERRAR SESIÓN</a>
         </div>
 
         <br />
