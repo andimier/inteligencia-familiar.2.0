@@ -184,10 +184,10 @@
 		global $connection;
 		$query = "SELECT * FROM articulos WHERE id=" . $articulo_id ." LIMIT 1";
 
-		$result_set = mysql_query($query, $connection);
+		$result_set = phpMethods('query', $query);
 		confirm_query($result_set);
 
-		if($articulo = mysql_fetch_array($result_set)){
+		if($articulo = phpMethods('fetch-array', $result_set)){
 			return $articulo;
 		}else{
 			return NULL;
