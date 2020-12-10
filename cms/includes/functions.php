@@ -232,8 +232,6 @@
 
 			$section = str_replace(' ', '-', strtolower($seccion['titulo']));
 
-			echo $section;
-
 			if ($section == 'contacto') {
 				continue;
 			}
