@@ -1,7 +1,7 @@
 <?php
-	require_once("cnx/session.php");
-	require_once("cnx/connection.php");
 	require_once("includes/functions.php");
+
+	require_once("cnx/connection.php");
 
 	require_once("../utils/phpfunctions.php");
 
@@ -22,31 +22,28 @@
 	</head>
 
 	<body>
+	<div id="cabezote" ></div>
 		<div id="cnt_login">
 			<div id="mensaje_login">
-				<?php
-					echo $mensaje;
-					echo $mensaje4;
-					echo $mensaje1;
-					echo $mensaje2;
-					echo $mensaje3;
-				?>
+				<?php if (!empty($error_message)): ?>
+					<?php echo $error_message; ?>
+				<?php endif; ?>
 			</div>
 
-			<form id="frm-login" method="post">
-				<label for="campo_usuario" id="labe">Nombre de Usuario</label>
-				<input type="text" name="usuario" id="campo_usuario"  />
+			<div class="login-form">
 
-				<label for="password" id="label">Tu Contraseña</label>
-				<input type="password" name="contrasena" id="password" maxlength="50" />
-				<br />
-				<br />
-				<br />
+				<form id="frm-login" method="post">
+					<label>Nombre de Usuario
+						<input type="text" name="usuario" id="campo_usuario"  />
+					</label>
 
-				<input type="submit" name="submit" class="boton_entrar fondo_verde" value="Ingresar" />
-			</form>
+					<label>Tu Contraseña
+						<input type="password" name="contrasena" id="password" />
+					</label>
+					<input type="submit" name="submit" class="boton_entrar fondo_verde" value="Ingresar" />
+				</form>
+			</div>
 		</div>
-		<div id="cabezote" ></div>
 	</body>
 </html>
 

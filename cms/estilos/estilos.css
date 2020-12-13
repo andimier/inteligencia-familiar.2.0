@@ -4,11 +4,12 @@ body {
 }
 
 li 	 {
-	padding-left:0px
+	padding-left: 0px
 }
 
 h3 {
-	margin-top:0px;}
+	margin-top: 0px;
+}
 
 input[type=text] {
 	padding: 10px;
@@ -27,6 +28,20 @@ input[type=submit] {
 
 input[type=submit]:hover {
 	background-color: #666;
+}
+
+.login-form {
+	margin: auto;
+	padding: 40px;
+	width: 40%;
+}
+
+.login-form input {
+	display: block;
+	box-sizing: border-box;
+	margin: 20px 0;
+	padding: 10px;
+	width: 70%;
 }
 
 #cabezote   {
@@ -261,8 +276,6 @@ div.imagenes {
 	color:#007fff;
 	font-size:15px;
 }
-
-/*============ LOGIN =======================*/
 
 table {
 	border-collapse:collapse;

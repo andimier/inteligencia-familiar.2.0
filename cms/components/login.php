@@ -1,13 +1,7 @@
 <?php
-	if (!isset($_SESSION)) {
-		session_start();
+	function logged_in(){
+		return isset($_SESSION['user_id']);
 	}
-
-	$mensaje = "";
-	$mensaje1 = "";
-	$mensaje2 = "";
-	$mensaje3 = "";
-	$mensaje4 = "";
 
 	function getUser($username, $hashed_password) {
 		$q = "SELECT id, username FROM usuarios WHERE username = '{$username}' AND hashed_password = '{$hashed_password}'";
@@ -28,12 +22,7 @@
 		);
 
 		foreach($required_fields as $fieldname){
-			if (!isset($_POST[$fieldname]) ||
-				(
-					empty($_POST[$fieldname])  &&
-					!is_numeric($_POST[$fieldname])
-				)
-			) {
+			if (!isset($_POST[$fieldname]) || empty($_POST[$fieldname])) {
 				$errors[] = $fieldname;
 			}
 		}
@@ -48,9 +37,15 @@
 		return sha1($password);
 	}
 
+	if (!isset($_SESSION)) {
+		session_start();
+	}
+
+	$error_message = "";
+
 	if (!isset($_POST['submit'])) {
 		if (isset($_GET['logout']) && $_GET['logout'] == 1) {
-			$mensaje = "Has cerrado tu sesión. ";
+			$error_message .= "Has cerrado tu sesión.";
 		}
 
 		$username = "";
@@ -59,31 +54,38 @@
 		return;
 	}
 
+	if (logged_in()) {
+		header("Location: content.php");
+		exit;
+	}
+
 	$errors = getErrors();
 
 	if (!empty($errors)) {
-		$mensaje2 = "Por favor ingresa los siguientes campos:<br />";
+		$error_message = "<p>Por favor ingresa los siguientes campos:</p>";
+
+		$error_message = "<p>Hubo ";
+		$error_message .= count($errors) . " ";
+		$error_message .= count($errors) == 1 ? 'error' : 'errores';
+		$error_message .= " en el formulario.</p>" ;
+		$error_message .= "<ul>";
 
 		foreach ($errors as $error) {
-			$mensaje3 = " <li> " . $error . "</li><br/>";
+			$error_message .= " <li> " . $error . "</li><br/>";
 		}
 
-		if (count($errors) == 1) {
-			$mensaje4 = "Hubo un error en el formulario.<br /><br />";
-		} else {
-			$mensaje4 = "Hubo " . count($errors) . " errors en el formulario.<br /><br />" ;
-		}
+		$error_message .= "</ul>";
 
 		return;
 	}
 
-	$username = trim(mysql_prep($_POST['usuario']));
-	$password = trim(mysql_prep($_POST['contrasena']));
+	$username = strip_tags(trim(mysql_prep($_POST['usuario'])));
+	$password = strip_tags(trim(mysql_prep($_POST['contrasena'])));
 	$hashed_password = getHash($password);
 	$user = getUser($username, $hashed_password);
 
 	if ($user == null) {
-		$mensaje1 = "El nombre de usuario o contraseña pueden estar errados.";
+		$error_message .= "El nombre de usuario o contraseña pueden estar errados.";
 		return;
 	}
 
