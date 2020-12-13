@@ -25,11 +25,11 @@
 	<div id="cabezote" ></div>
 		<div id="cnt_login">
 
-			<div class="login-message">
-				<?php if (!empty($error_message)): ?>
+			<?php if (!empty($error_message)): ?>
+				<div class="login-message">
 					<?php echo $error_message; ?>
-				<?php endif; ?>
-			</div>
+				</div>
+			<?php endif; ?>
 
 			<div class="login-form">
 
