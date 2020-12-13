@@ -1,5 +1,5 @@
 <?php
-	function logged_in(){
+	function get_is_logged_in(){
 		return isset($_SESSION['user_id']);
 	}
 
@@ -41,6 +41,11 @@
 		session_start();
 	}
 
+	if (get_is_logged_in()) {
+		header("Location: content.php");
+		exit;
+	}
+
 	$error_message = "";
 
 	if (!isset($_POST['submit'])) {
@@ -54,11 +59,6 @@
 		return;
 	}
 
-	if (logged_in()) {
-		header("Location: content.php");
-		exit;
-	}
-
 	$errors = getErrors();
 
 	if (!empty($errors)) {
@@ -67,11 +67,11 @@
 		$error_message = "<p>Hubo ";
 		$error_message .= count($errors) . " ";
 		$error_message .= count($errors) == 1 ? 'error' : 'errores';
-		$error_message .= " en el formulario.</p>" ;
+		$error_message .= " en el formulario:</p>" ;
 		$error_message .= "<ul>";
 
 		foreach ($errors as $error) {
-			$error_message .= " <li> " . $error . "</li><br/>";
+			$error_message .= " <li> " . $error . "</li>";
 		}
 
 		$error_message .= "</ul>";
@@ -90,9 +90,12 @@
 	}
 
 	$usuario_encontrado = phpMethods('fetch-array',$user);
-	$_SESSION['user_id'] = $usuario_encontrado['id'];
-	$_SESSION['username'] = $usuario_encontrado['username'];
 
-	header("Location: content.php");
-	exit();
+	if ($usuario_encontrado) {
+		$_SESSION['user_id'] = $usuario_encontrado['id'];
+		$_SESSION['username'] = $usuario_encontrado['username'];
+
+		header("Location: content.php");
+		exit();
+	}
 ?>

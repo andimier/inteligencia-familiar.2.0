@@ -24,7 +24,8 @@
 	<body>
 	<div id="cabezote" ></div>
 		<div id="cnt_login">
-			<div id="mensaje_login">
+
+			<div class="login-message">
 				<?php if (!empty($error_message)): ?>
 					<?php echo $error_message; ?>
 				<?php endif; ?>
